@@ -89,6 +89,14 @@ function sum(...nums) {
 console.log(sum(1, 2, 3, 4, 5)); // 15
 
 //====================Q12=============================================
+function waitSuccess() {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve("Success"), 3000);
+  });
+}
+
+waitSuccess().then(console.log);
+
 //====================Q13=============================================
 function largest(arr) {
   return Math.max(...arr);
